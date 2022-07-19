@@ -48,34 +48,6 @@ namespace _8
                  }
              }
              Console.WriteLine(largest);
-            //const int LEN = 13;
-
-            //long cur = 1;
-            //int zeros = 0;
-
-            //for (var q = 0; q < LEN; ++q)
-            //    if (s[q] == '0')
-            //        ++zeros;
-            //    else
-            //        cur *= s[q] - '0';
-
-            //long max = zeros == 0 ? cur : 0;
-            //int i = LEN - 1;
-
-            //for (var q = LEN; q < s.Length; ++q)
-            //{
-            //    if (s[q - LEN] == '0')
-            //        --zeros;
-            //    else
-            //        cur /= s[q - LEN] - '0';
-
-            //    if (s[q] == '0')
-            //        ++zeros;
-            //    else if ((cur *= s[q] - '0') > max && zeros == 0)
-            //        (max, i) = (cur, q);
-            //}
-
-            //Console.WriteLine("Product {0} on {1} at {2}..{3}", max, s.Substring(i - LEN + 1, LEN), i - LEN + 1, i);
             DateTime stopTime = DateTime.Now;
             TimeSpan duration = stopTime - startTime;
             Console.WriteLine("Solution took {0} ms", duration.TotalMilliseconds);
